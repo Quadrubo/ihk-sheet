@@ -181,7 +181,11 @@ output_file.close()
 print("File succesfully created (output.txt)")
 
 if copy_to_clipboard:
-    pyperclip.copy(output_data)
+    try:
+        pyperclip.copy(output_data)
+    except pyperclip.PyperclipException as e:
+        print("It seems like there is no copy/paste mechanism installed on your system. Please follow the link in the error.")
+        raise e
 
     print("The text was copied to your clipboard!")
 

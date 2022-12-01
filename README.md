@@ -30,6 +30,14 @@ pip install -r requirements.txt
 ```
 Start the `main.py` file to get started.
 
+### Troubleshooting
+
+## Copy to Clipboard not working
+
+If you get an error, stating `It seems like there is no copy/paste mechanism installed on your system. Please follow the link in the error.`, your system may be missing a copy/paste mechanism.
+Follow the instructions at [Pyperclip - Not Implemented Error](https://pyperclip.readthedocs.io/en/latest/index.html#not-implemented-error) to install a copy/paste mechanism on your system.
+On my system, installing `xclip` solved the issue.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
